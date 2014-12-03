@@ -15,7 +15,8 @@ Upload SVG files to your WordPress and use them anywhere you want via shortcode.
 == Description ==
 This plugin adds some SVG functionality to your WordPress and uses a SVG technique that's based on an idea by Alexey Ten.
   
-List of Features:
+List of Features:  
+  
 * Upload SVG files to your media library
 * Use SVG files via shortcode in your posts or pages
 * Set the style via CSS
