@@ -1,5 +1,6 @@
 ﻿=== Add Full SVG Support ===
 Contributors: Jens Kuerschner
+Author: Jens Kuerschner
 Tags: SVG, Style, Support, Vector, Upload, Input, Fallback, PNG, Image, Shortcode, SEO
 Donate link: http://www.jenskuerschner.de/svg-images-with-png-fallback-in-wordpress/
 Requires at least: 3.0.1
@@ -13,7 +14,7 @@ Upload SVG files to your WordPress and use them anywhere you want via shortcode.
 
 
 == Description ==
-This plugin adds some SVG functionality to your WordPress and uses a SVG technique that's based on an idea by Alexey Ten.
+This plugin adds some SVG functionality to your WordPress and uses a SVG technique that's based on an idea by Alexey Ten. This way of including SVG images into HTML seems to be the one with the best combination of performance and compatibility at the moment.
   
 List of Features:  
   
