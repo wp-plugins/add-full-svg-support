@@ -1,6 +1,6 @@
 ﻿=== Add Full SVG Support ===
-Contributors: Jens Kuerschner
-Author: Jens Kuerschner
+Contributors: jekuer
+Author: jekuer
 Tags: SVG, Style, Support, Vector, Upload, Input, Fallback, PNG, Image, Shortcode, SEO
 Donate link: http://www.jenskuerschner.de/svg-images-with-png-fallback-in-wordpress/
 Requires at least: 3.0.1
