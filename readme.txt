@@ -4,7 +4,7 @@ Author: jekuer
 Tags: SVG, Style, Support, Vector, Upload, Input, Fallback, PNG, Image, Shortcode, SEO
 Donate link: http://www.jenskuerschner.de/svg-images-with-png-fallback-in-wordpress/
 Requires at least: 3.0.1
-Tested up to: 4.1
+Tested up to: 4.2
 Stable tag: 1.0.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
