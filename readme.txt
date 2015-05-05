@@ -5,11 +5,11 @@ Tags: SVG, Style, Support, Vector, Upload, Input, Fallback, PNG, Image, Shortcod
 Donate link: http://www.jenskuerschner.de/svg-images-with-png-fallback-in-wordpress/
 Requires at least: 3.0.1
 Tested up to: 4.2
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
   
-Upload SVG files to your WordPress and use them anywhere you want via shortcode. Include a fallback image and also add style-information. You can even auto-change all regular images.
+Upload SVG files to your WordPress and use them anywhere you want via shortcode. Include a fallback image and also add style-information.
 
 
 
@@ -64,6 +64,9 @@ Did you specify any size information (width; height)? If not, do so! Most SVG fi
 
 
 == Changelog ==
+= 1.1.2 =
+* Minor bug fixes
+
 = 1.1.1 =
 * Minor bug fixes
 
