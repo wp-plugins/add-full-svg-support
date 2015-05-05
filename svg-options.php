@@ -3,7 +3,7 @@
  * Plugin Name: Add Full SVG Support
  * Plugin URI: http://www.jenskuerschner.de/svg-images-with-png-fallback-in-wordpress/
  * Description: Upload SVG files to your WordPress and use them anywhere you want via shortcode. Include a fallback image and also add style-information.
- * Version: 1.1.0
+ * Version: 1.1.1
  *
  * Author: Jens K&uuml;rschner
  * Author URI: http://www.jenskuerschner.de

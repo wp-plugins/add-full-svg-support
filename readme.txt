@@ -5,7 +5,7 @@ Tags: SVG, Style, Support, Vector, Upload, Input, Fallback, PNG, Image, Shortcod
 Donate link: http://www.jenskuerschner.de/svg-images-with-png-fallback-in-wordpress/
 Requires at least: 3.0.1
 Tested up to: 4.2
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
   
@@ -64,6 +64,9 @@ Did you specify any size information (width; height)? If not, do so! Most SVG fi
 
 
 == Changelog ==
+= 1.1.1 =
+* Minor bug fixes
+
 = 1.1.0 =
 * (added) Functionality to auto-change regular image tags with the svg code
 * (added) Functionality to try to get svg size from the file if no size is specified

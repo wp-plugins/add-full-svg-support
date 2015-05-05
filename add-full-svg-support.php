@@ -3,7 +3,7 @@
  * Plugin Name: Add Full SVG Support
  * Plugin URI: http://www.jenskuerschner.de/svg-images-with-png-fallback-in-wordpress/
  * Description: Upload SVG files to your WordPress and use them anywhere you want via shortcode. Include a fallback image and also add style-information.
- * Version: 1.1.0
+ * Version: 1.1.1
  *
  * Author: Jens K&uuml;rschner
  * Author URI: http://www.jenskuerschner.de
@@ -60,10 +60,18 @@ function generate_svg_code($atts) {
         if ($svga['width'] == "" or $svga['width']  == "0" or $svga['height'] == "" or $svga['height'] == "0") {
             if ($file = @fopen(htmlentities($svga['svg_path'], ENT_QUOTES), 'rb')) {
                 $svgfile = simplexml_load_file(htmlentities($svga['svg_path'], ENT_QUOTES));
-                $svgwidth = (int)substr($svgfile[width],0,-2);
+                if (substr($svgfile[width],-2) == "px") {
+                    $svgwidth = (int)substr($svgfile[width],0,-2);
+                } else {
+                    $svgwidth = (int)$svgfile[width];
+                }
                 if (!is_numeric($svgwidth) or $svgwidth > 99999) $svgwidth = "0";
                 if ($svgwidth != "" and $svgwidth != "0") $svga['width'] = $svgwidth."px";
-                $svgheight = (int)substr($svgfile[height],0,-2);
+                if (substr($svgfile[height],-2) == "px") {
+                    $svgheight = (int)substr($svgfile[height],0,-2);
+                } else {
+                    $svgheight = (int)$svgfile[height];
+                }
                 if (!is_numeric($svgheight) or $svgheight > 99999) $svgheight = "0";
                 if ($svgheight != "" and $svgheight != "0") $svga['height'] = $svgheight."px";
             }
