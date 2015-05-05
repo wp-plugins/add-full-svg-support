@@ -1,9 +1,7 @@
 <?php
 /**
- * Plugin Name: Add Full SVG Support
- * Plugin URI: http://www.jenskuerschner.de/svg-images-with-png-fallback-in-wordpress/
- * Description: Upload SVG files to your WordPress and use them anywhere you want via shortcode. Include a fallback image and also add style-information.
- * Version: 1.1.1
+ * This File is part of the Plugin 'Add Full SVG Support' (http://www.jenskuerschner.de/svg-images-with-png-fallback-in-wordpress/)
+ * Upload SVG files to your WordPress and use them anywhere you want via shortcode. Include a fallback image and also add style-information.
  *
  * Author: Jens K&uuml;rschner
  * Author URI: http://www.jenskuerschner.de
@@ -113,7 +111,7 @@ class AddFullSVGSupportSettingsPage {
     public function acai_callback() {
         $html = '<p><input type="checkbox" id="acai" name="add_full_svg_support_option_name[acai]" value="1"' . checked(1, $this->options['acai'], false ) . '/>';
         $html .= '<label for="acai">Check this if you want to automatically change all images on your page to svg-images.</label></p>';
-        $html .= '<p>&nbsp;</p><p><em>(Images will be changed if there is a svg file with the exact same name in the exact same folder on your server. You can improve compatibility by giving all of your images width and height values (also recommended for SEO issues).)<br />(I do not recommend to activate this, because it is a huge performance killer! However, if you love the convenient way, feel free to use it.)</em></p><p>&nbsp;</p><hr><p>&nbsp;</p><p>&nbsp;</p>';
+        $html .= '<p>&nbsp;</p><p><em>(Images will be changed if there is a svg file with the exact same name in the exact same folder on your server. You can improve compatibility by giving all of your images width and height values (also recommended for SEO issues). Please make sure that your theme has set wp_head and wp_footer correctly!)<br /><b>(I do not recommend to activate this, because it is a huge performance killer! It might also overload your server in some rare cases.</b> However, if you love the convenient way, feel free to use it.)</em></p><p>&nbsp;</p><hr><p>&nbsp;</p><p>&nbsp;</p>';
         echo $html;
     }
 
