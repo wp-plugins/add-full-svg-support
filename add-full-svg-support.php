@@ -3,7 +3,7 @@
  * Plugin Name: Add Full SVG Support
  * Plugin URI: http://www.jenskuerschner.de/svg-images-with-png-fallback-in-wordpress/
  * Description: Upload SVG files to your WordPress and use them anywhere you want via shortcode. Include a fallback image and also add style-information.
- * Version: 1.1.2
+ * Version: 1.1.3
  *
  * Author: Jens K&uuml;rschner
  * Author URI: http://www.jenskuerschner.de
@@ -56,7 +56,7 @@ function generate_svg_code($atts) {
     
     // get size of the svg
     $checkoptions = get_option("add_full_svg_support_option_name");
-    if ($checkoptions["asf"] != 1) {
+    if (isset($checkoptions["asf"]) and $checkoptions["asf"] != 1) {
         if ($svga['width'] == "" or $svga['width']  == "0" or $svga['height'] == "" or $svga['height'] == "0") {
             if ($file = @fopen(htmlentities($svga['svg_path'], ENT_QUOTES), 'rb')) {
                 $svgfile = simplexml_load_file(htmlentities($svga['svg_path'], ENT_QUOTES));
@@ -103,7 +103,7 @@ function svg_callback($buffer) {
     return $buffer;
 }
 $checkoptions = get_option("add_full_svg_support_option_name");
-if ($checkoptions["acai"] == 1) {
+if (isset($checkoptions["acai"]) and $checkoptions["acai"] == 1) {
     function svg_buffer_start() { ob_start("svg_callback"); }
     function svg_buffer_end() { ob_end_flush(); }
     add_action('wp_head', 'svg_buffer_start');
